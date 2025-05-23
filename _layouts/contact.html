@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<article class="post">
+
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+
+        <div class="contact-card">
+        <h3>Transformă-ți casa în locuința visurilor!</h3>
+        <ul class="contact-list">
+            <li>
+            <span class="icon">📞</span>
+            <a href="tel:+40724507336">+40 724 507 336</a>
+            </li>
+            <li>
+            <span class="icon">✉️</span>
+            <a href="mailto:vanzari.daminci@gmail.com">vanzari.daminci@gmail.com</a>
+            </li>
+            <li>
+            <span class="icon">⏰</span>
+            Luni - Vineri, 9:00 - 17:00
+            </li>
+        </ul>
+        </div>
+
+        <div class="container">
+            <form target="_blank" 
+            action="https://formsubmit.co/mincinoium@gmail.com" 
+            method="POST"
+            class="contact-form"
+            >
+
+                <!-- disable their default captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- after submit, go to “/thank-you.html” (create that page yourself) -->
+                <input type="hidden" name="_next" value="/thank-you.html">
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Nume" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Adresa de email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="phone" name="phone" class="form-control" placeholder="Numărul de telefon">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mesaj" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Trimite</button>
+            </form>
+        </div>
+
+    </div>
+
+</article>

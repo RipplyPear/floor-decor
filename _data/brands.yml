@@ -1,0 +1,14 @@
+- name: CERRAD
+  img_url: /assets/cerrad.avif
+  website: https://cerrad.com/en/
+  category: gresie - faianţă
+
+- name: RAKO
+  img_url: /assets/rako.avif
+  website: https://www.rako.cz/en
+  category: gresie - faianţă
+
+- name: KRONOTEX
+  img_url: /assets/kronotex.svg
+  website: https://www.kronotex.com/Kronotex-0008163044.html
+  category: spc - parchet
