@@ -1,5 +1,5 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" value="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
 
@@ -31,7 +31,9 @@
       <div class="footer-col footer-col-3">
         <h3>Politici</h3>
         <ul>
-          {% for item in site.data.navigation %}
+          {% assign policies = site.data.navigation 
+            | where_exp: "item", "item.url == '/politica-de-confidentialitate/' or item.url == '/termeni-si-conditii/'" %}
+          {% for item in policies %}
             <li class="{% if page.url == item.url %}active{% endif %}">
               <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
             </li>

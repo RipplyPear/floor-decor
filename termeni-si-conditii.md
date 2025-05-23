@@ -2,7 +2,9 @@
 layout: page
 #title: Termeni și condiții
 ignore: yes
+category: politici
 permalink: /termeni-si-conditii/
+url: /termeni-si-conditii/
 ---
 
 ### 1\. Informații despre contractul de vânzare
