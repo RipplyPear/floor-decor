@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   în design interior şi exterior, care oferă gresie şi faianţă, parchet SPC, accesorii de 
   baie şi piatră naturală de la branduri de renume. Echipa noastră vă stă la dispoziție cu 
   consultanță dedicată pentru a transforma orice spațiu într-o locuință de vis.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "floor-decor" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: catalin-mincinoiu-4492a886
 linkedin_show_name: Cătălin Mincinoiu
