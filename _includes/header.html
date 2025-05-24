@@ -18,9 +18,7 @@
   </label>
 
   <div class="trigger">
-    {%- assign header_items = site.data.navigation 
-         | reject: "url", "/politica-de-confidentialitate/" 
-         | reject: "url", "/termeni-si-conditii/" -%}
+    {%- assign header_items = site.data.navigation -%}
     {% for item in header_items %}
       <a
         class="page-link{% if page.url == item.url %} active{% endif %}"
