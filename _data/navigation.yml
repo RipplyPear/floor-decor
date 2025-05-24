@@ -2,10 +2,10 @@
   url: /
 
 - title: Produse
-  url: /produse
+  url: /produse/
 
 - title: Despre noi
-  url: /about/index
+  url: /about/index/
 
 - title: Contact
-  url: /contact
+  url: /contact/
