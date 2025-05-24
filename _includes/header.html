@@ -19,13 +19,13 @@
 
   <div class="trigger">
     {% for item in site.data.navigation %}
-  <a
-    class="page-link{% if page.url == item.url %} active{% endif %}"
-    href="{{ item.url | relative_url }}"
-  >
-    {{ item.title }}.html
-  </a>
-{% endfor %}
+      <a
+        class="page-link{% if page.url == item.url %} active{% endif %}"
+        href="{{ item.url | relative_url }}"
+      >
+        {{ item.title }}
+      </a>
+    {% endfor %}
   </div>
 </nav>
   </div>
