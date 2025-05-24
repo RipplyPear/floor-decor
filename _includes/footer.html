@@ -31,8 +31,7 @@
       <div class="footer-col footer-col-3">
         <h3>Politici</h3>
         <ul>
-          {% assign policies = site.data.navigation 
-            | where_exp: "item", "item.url == '/politica-de-confidentialitate/' or item.url == '/termeni-si-conditii/'" %}
+          {% assign policies = site.data.policies %}
           {% for item in policies %}
             <li class="{% if page.url == item.url %}active{% endif %}">
               <a href="{{ item.url | relative_url }}">{{ item.title }}</a>

@@ -1,5 +1,11 @@
-- title: Politica de Confidențialitate
-  url: /politica-de-confidentialitate/
+- title: Acasă
+  url: /
 
-- title: Termeni și Condiții
-  url: /termeni-si-conditii/
+- title: Produse
+  url: /produse/
+
+- title: Despre noi
+  url: /despre-noi/
+
+- title: Contact
+  url: /contact/
