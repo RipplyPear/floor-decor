@@ -1,6 +1,6 @@
 ---
 layout: page
-# title: Politică de confidențialitate
+title: Politică de confidențialitate
 ignore: yes
 category: politici
 permalink: /politica-de-confidentialitate/

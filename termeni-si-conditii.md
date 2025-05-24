@@ -1,6 +1,6 @@
 ---
 layout: page
-#title: Termeni și condiții
+title: Termeni și condiții
 ignore: yes
 category: politici
 permalink: /termeni-si-conditii/
