@@ -1,5 +1,0 @@
----
-layout: wrapper
-title: "Haz"
----
-

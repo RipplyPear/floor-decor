@@ -42,6 +42,12 @@ nav:
   - title: Termeni și condiții
     url: /_misc/termeni-si-conditii/
 
+header_pages:
+  - index.markdown
+  - produse.md
+  - about.markdown
+  - contact.md
+
 # Default FRONT MATTER
 defaults:
   -
