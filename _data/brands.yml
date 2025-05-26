@@ -8,7 +8,92 @@
   website: https://www.rako.cz/en
   category: gresie - faianţă
 
+- name: EMIGRES
+  img_url: /assets/emigres.png
+  website: https://www.emigres.es/en/colecciones/enzo/
+  category: gresie - faianţă
+
+- name: ALAPLANA
+  img_url: /assets/alaplana.svg
+  website: https://nuevaalaplana.es/?lang=en
+  category: gresie - faianţă
+
+- name: TAU
+  img_url: /assets/tau.svg
+  website: https://www.tauceramica.com/en/
+  category: gresie - faianţă
+
+- name: KTL
+  img_url: /assets/KTL.jpg
+  website: https://ktlceramica.com/en/
+  category: gresie - faianţă
+
+- name: DUNE
+  img_url: /assets/dune.png
+  website: https://duneceramics.com/en
+  category: gresie - faianţă
+
+- name: PERONDA
+  img_url: /assets/peronda.com
+  website: https://peronda.com/
+  category: gresie - faianţă
+
+- name: LA-FABRICA
+  img_url: /assets/la-fabrica.png
+  website: https://www.lafabbrica.it/en/
+  category: gresie - faianţă
+
+- name: REPUBLIC
+  img_url: /assets/republic.avif
+  website: https://www.republicfloor.com/
+  category: SPC - Parchet
+
+- name: FALQUON
+  img_url: /assets/falquon.png
+  website: https://www.falquon.de/
+  category: SPC - Parchet
+
 - name: KRONOTEX
   img_url: /assets/kronotex.svg
   website: https://www.kronotex.com/Kronotex-0008163044.html
-  category: spc - parchet
+  category: SPC - parchet
+
+- name: AWD
+  img_url: /assets/awd.svg
+  website: https://www.awdinterior.com/en
+  category: accesorii baie
+
+- name: QBATH
+  img_url: /assets/qbath.png
+  website: https://www.q-bath.com/en/
+  category: accesorii baie
+
+- name: MAERCHARME
+  img_url: /assets/maer-charme.svg
+  website: https://www.maercharme.com/
+  category: piatră naturală
+
+- name: NEOLITH
+  img_url: /assets/neolith.jpg
+  website: https://www.neolith.com/en/
+  category: piatră naturală
+
+- name: INVISACOOK
+  img_url: /assets/invisa-cook.avif
+  website: https://www.invisacook.com/
+  category: piatră naturală
+
+- name: MUHR
+  img_url: /assets/muhr.png
+  website: https://www.klinkerwerke-muhr.de/en/
+  category: piatră naturală
+
+- name: ENGELS
+  img_url: /assets/engels.png
+  website: https://www.engelsbrick.com/
+  category: piatră naturală
+
+- name: ABCKLINKER
+  img_url: /assets/abc-klinker.png
+  website: https://abc-klinker.de/en/
+  category: piatră naturală
