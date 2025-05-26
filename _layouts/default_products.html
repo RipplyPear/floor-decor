@@ -27,7 +27,7 @@
     {% assign groups = site.data.brands | group_by: "category" %}
     {% for group in groups %}
       <section class="gallery-section">
-        <h2 class="gallery-title">{{ group.name | capitalize }}</h2>
+        <h2 class="gallery-title"><u>{{ group.name | capitalize }}</u></h2>
         <div class="logo-gallery">
           {% for item in group.items %}
             <div class="logo-item">
