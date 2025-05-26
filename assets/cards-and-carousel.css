@@ -10,6 +10,7 @@
     .carousel-track {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      z-index: 1;   /* track behind */
     }
     .carousel-slide {
       display: flex;
@@ -34,6 +35,7 @@
       font-size: 2rem;
       padding: 0 10px;
       cursor: pointer;
+      z-index: 2;   /* arrows in front */
     }
     .carousel-button.prev { left: 10px; }
     .carousel-button.next { right: 10px; }
