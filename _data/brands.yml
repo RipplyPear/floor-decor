@@ -23,25 +23,10 @@
   website: https://www.tauceramica.com/en/
   category: gresie - faianţă
 
-- name: KTL
-  img_url: /assets/KTL.jpg
-  website: https://ktlceramica.com/en/
-  category: gresie - faianţă
-
-- name: DUNE
-  img_url: /assets/dune.png
-  website: https://duneceramics.com/en
-  category: gresie - faianţă
-
-- name: PERONDA
-  img_url: /assets/peronda.png
-  website: https://peronda.com/
-  category: gresie - faianţă
-
-- name: LA-FABRICA
-  img_url: /assets/la-fabrica.png
-  website: https://www.lafabbrica.it/en/
-  category: gresie - faianţă
+- name: DECORA
+  img_url: /assets/decora.png
+  website: https://decora.pl/en/
+  category: SPC - Parchet
 
 - name: REPUBLIC
   img_url: /assets/republic.avif
@@ -51,6 +36,11 @@
 - name: FALQUON
   img_url: /assets/falquon.png
   website: https://www.falquon.de/
+  category: SPC - Parchet
+
+- name: BARLINEK
+  img_url: /assets/barlinek.svg
+  website: https://www.barlinek.ro/
   category: SPC - Parchet
 
 - name: KRONOTEX
@@ -83,17 +73,42 @@
   website: https://www.invisacook.com/
   category: piatră naturală
 
-- name: MUHR
-  img_url: /assets/muhr.png
-  website: https://www.klinkerwerke-muhr.de/en/
-  category: piatră naturală
+- name: FRESHOUSE
+  img_url: /assets/freshouse.jpg
+  website: /assets/freshouse-catalog.pdf
+  category: profile arhitecturale pentru fațadă
 
-- name: ENGELS
-  img_url: /assets/engels.png
-  website: https://www.engelsbrick.com/
-  category: piatră naturală
+# - name: KTL
+#   img_url: /assets/KTL.jpg
+#   website: https://ktlceramica.com/en/
+#   category: gresie - faianţă
 
-- name: ABCKLINKER
-  img_url: /assets/abc-klinker.png
-  website: https://abc-klinker.de/en/
-  category: piatră naturală
+# - name: DUNE
+#   img_url: /assets/dune.png
+#   website: https://duneceramics.com/en
+#   category: gresie - faianţă
+
+# - name: PERONDA
+#   img_url: /assets/peronda.png
+#   website: https://peronda.com/
+#   category: gresie - faianţă
+
+# - name: LA-FABRICA
+#   img_url: /assets/la-fabrica.png
+#   website: https://www.lafabbrica.it/en/
+  # category: gresie - faianţă
+
+# - name: MUHR
+#   img_url: /assets/muhr.png
+#   website: https://www.klinkerwerke-muhr.de/en/
+#   category: piatră naturală
+
+# - name: ENGELS
+#   img_url: /assets/engels.png
+#   website: https://www.engelsbrick.com/
+#   category: piatră naturală
+
+# - name: ABCKLINKER
+#   img_url: /assets/abc-klinker.png
+#   website: https://abc-klinker.de/en/
+#   category: piatră naturală

@@ -24,27 +24,25 @@
         {%- comment -%}
       Inline “brand galleries” instead of pulling in an include
     {%- endcomment -%}
+    {% assign category_order = "profile arhitecturale pentru fațadă,SPC - Parchet,accesorii baie,gresie - faianţă,piatră naturală" | split: "," %}
     {% assign groups = site.data.brands | group_by: "category" %}
-    {% for group in groups %}
-      <section class="gallery-section">
-        <h2 class="gallery-title"><u>{{ group.name | capitalize }}</u></h2>
-        <div class="logo-gallery">
-          {% for item in group.items %}
-            <div class="logo-item">
-              <a
-                href="{{ item.website }}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="{{ item.img_url | relative_url }}"
-                  alt="{{ item.name }} logo"
-                >
-              </a>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
+    
+    {% for cat in category_order %}
+      {% assign items = site.data.brands | where: "category", cat %}
+      {% if items.size > 0 %}
+        <section class="gallery-section">
+          <h2 class="gallery-title"><u>{{ cat }}</u></h2>
+          <div class="logo-gallery">
+            {% for item in items %}
+              <div class="logo-item">
+                <a href="{{ item.website }}" target="_blank" rel="noopener noreferrer">
+                  <img src="{{ item.img_url | relative_url }}" alt="{{ item.name }} logo">
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
     {% endfor %}
 
       </div>

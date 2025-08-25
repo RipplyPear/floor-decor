@@ -3,10 +3,13 @@ layout: default
 ---
 
 <div class="home">
-  {%- include cards-and-carousel.html -%}
+  
+  {%- include cards.html -%}
 
   <h1><strong>Cine suntem?</strong></h1>
   <p>{{- site.description | escape -}}</p>
+
+  {%- include cards-and-carousel.html -%}
 
   {{ content }}
 

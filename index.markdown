@@ -6,6 +6,29 @@ layout: home
 title: Acasă
 ---
 
+# **Freshouse – Întâlnirea perfectă între design și eleganță**
+
+Suntem încântați să vă prezentăm universul Freshouse, un brand dedicat soluțiilor elegante și inovatoare pentru designul rezidențial și comercial.
+
+✅ Producem profile decorative arhitecturale pentru fațade – unice prin design și calitate, create în România sub brandul Freshouse.
+
+✅ Importăm și distribuim profile decorative Freshouse din poliuretan și polimer dur pentru interioare – ideale pentru finisaje rafinate și personalizate.
+
+✅ Suntem parteneri Barlinek – parchet triplustratificat de top, recunoscut internațional pentru durabilitate și estetica naturală.
+
+✅ Comercializăm pardoseli SPC Decora și în curând SPC Barlinek – soluții rezistente și versatile pentru spații moderne.
+
+✅ Oferim plăci decorative din SPC și PVC în imitație de marmură și granit, perfecte pentru pereți-statement.
+
+✅ Dispunem de o gamă variată de riflaje din PVC – soluții contemporane pentru accente 3D spectaculoase.
+
+Colaborăm deja cu arhitecți, designeri și dezvoltatori care caută produse de înaltă calitate, livrare rapidă și consultanță personalizată.
+
+
+🎯 Doriți mostre, cataloage sau o prezentare personalizată?
+
+Vă invităm să ne contactați pentru a vă trimite gama completă și a discuta cum putem susține proiectele dvs. cu produse care inspiră.
+
 # **Bine de știut**
 
 **Tonalitatea.** Tonalitatea mostrelor este indicativă. În cazul anumitor produse, pentru obținerea unor efecte particulare, în aceleași cutii se găsesc plăci ce au tonalități diferite.
