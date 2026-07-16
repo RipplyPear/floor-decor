@@ -52,11 +52,10 @@ header_pages:
 defaults:
   -
     scope:
-      path: "" #apply to all files / PATH
-      type: "page"
-      values:
-        layout: "page"
-        title: "Titlu"
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
