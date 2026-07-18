@@ -4,10 +4,7 @@
   {% assign brands = site.data.brands | where: "category", category %}
 
   {% if brands.size > 0 %}
-    <section
-      class="gallery-section"
-      aria-labelledby="category-{{ category | slugify }}"
-    >
+    <section class="gallery-section" aria-labelledby="category-{{ category | slugify }}">
       <h2 id="category-{{ category | slugify }}" class="gallery-title">
         <u>{{ category }}</u>
       </h2>
@@ -21,19 +18,8 @@
           {% endif %}
 
           <div class="logo-item">
-            <a
-              href="{{ brand.website }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="{{ link_label }}"
-              title="{{ link_label }}"
-            >
-              <img
-                src="{{ brand.img_url | relative_url }}"
-                alt="{{ brand.name }} logo"
-                loading="lazy"
-                decoding="async"
-              >
+            <a href="{{ brand.website }}" target="_blank" rel="noopener noreferrer" aria-label="{{ link_label }}" title="{{ link_label }}">
+              <img src="{{ brand.img_url | relative_url }}" alt="{{ brand.name }} logo" loading="lazy" decoding="async">
             </a>
           </div>
         {% endfor %}

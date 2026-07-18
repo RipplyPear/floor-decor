@@ -158,3 +158,18 @@
     width: 100%;
   }
 }
+
+.contact-form .form-privacy {
+  margin: 0 0 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.contact-form .form-privacy a {
+  color: #1f6f78;
+}
+
+.contact-form .form-privacy a:visited {
+  color: #1f6f78;
+}
