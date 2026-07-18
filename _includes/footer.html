@@ -15,7 +15,16 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%} -->
-            {%- include social.html -%}
+            {%- if site.linkedin_username -%}
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape }}"
+                  rel="me"
+                >
+                  LinkedIn: {{ site.linkedin_show_name | default: site.title | escape }}
+                </a>
+              </li>
+            {%- endif -%}
             </li>
             {%- if site.email -%}
             <li>✉️ <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
