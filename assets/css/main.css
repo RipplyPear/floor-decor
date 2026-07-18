@@ -492,22 +492,22 @@ table td {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ─── Make the link fill and become a flex container ───────────────── */
 .logo-item a {
+  box-sizing: border-box;
   display: flex;
-  align-items: center; /* vertical centering */
-  justify-content: center; /* horizontal centering */
   width: 100%;
   height: 100%;
-  text-decoration: none; /* optional */
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
-/* ─── Image stays auto‐sized to preserve aspect ratio ───────────────── */
 .logo-item img {
-  width: 100%; /* fill the width */
-  height: auto; /* keep aspect ratio */
-  object-fit: contain;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /**
@@ -791,4 +791,11 @@ table td {
 
 .home-cta:visited {
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
 }

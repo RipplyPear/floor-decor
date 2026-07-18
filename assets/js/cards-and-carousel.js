@@ -15,47 +15,78 @@
     return;
   }
 
-  let currentIndex = 0;
+  const mobileQuery = window.matchMedia("(max-width: 600px)");
+  let slidesPerView = mobileQuery.matches ? 1 : 2;
+  let currentPage = 0;
+  let currentImageIndex = 0;
+  let indicatorButtons = [];
 
-  const indicatorButtons = slides.map((_, index) => {
-    const button = document.createElement("button");
+  function pageCount() {
+    return Math.ceil(slides.length / slidesPerView);
+  }
 
-    button.className = "dash";
-    button.type = "button";
-    button.setAttribute("aria-label", `Afișează setul de imagini ${index + 1}`);
+  function renderIndicators() {
+    indicators.replaceChildren();
 
-    button.addEventListener("click", () => goToSlide(index));
-    indicators.appendChild(button);
+    indicatorButtons = Array.from({ length: pageCount() }, (_, index) => {
+      const firstImage = index * slidesPerView + 1;
+      const lastImage = Math.min(firstImage + slidesPerView - 1, slides.length);
+      const button = document.createElement("button");
 
-    return button;
-  });
+      button.className = "dash";
+      button.type = "button";
+      button.setAttribute(
+        "aria-label",
+        `Afișează imaginile ${firstImage}–${lastImage}`,
+      );
 
-  function goToSlide(index) {
-    currentIndex = (index + slides.length) % slides.length;
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      button.addEventListener("click", () => goToPage(index));
+      indicators.appendChild(button);
+
+      return button;
+    });
+  }
+
+  function goToPage(index) {
+    const totalPages = pageCount();
+
+    currentPage = (index + totalPages) % totalPages;
+    currentImageIndex = currentPage * slidesPerView;
+    track.style.transform = `translateX(-${currentPage * 100}%)`;
 
     indicatorButtons.forEach((button, buttonIndex) => {
-      const isActive = buttonIndex === currentIndex;
+      const isActive = buttonIndex === currentPage;
 
       button.classList.toggle("active", isActive);
       button.setAttribute("aria-current", String(isActive));
     });
   }
 
-  previousButton.addEventListener("click", () => goToSlide(currentIndex - 1));
-  nextButton.addEventListener("click", () => goToSlide(currentIndex + 1));
+  function handleViewportChange() {
+    const previousImageIndex = currentImageIndex;
+
+    slidesPerView = mobileQuery.matches ? 1 : 2;
+    renderIndicators();
+    goToPage(Math.floor(previousImageIndex / slidesPerView));
+  }
+
+  previousButton.addEventListener("click", () => goToPage(currentPage - 1));
+  nextButton.addEventListener("click", () => goToPage(currentPage + 1));
 
   carousel.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
       event.preventDefault();
-      goToSlide(currentIndex - 1);
+      goToPage(currentPage - 1);
     }
 
     if (event.key === "ArrowRight") {
       event.preventDefault();
-      goToSlide(currentIndex + 1);
+      goToPage(currentPage + 1);
     }
   });
 
-  goToSlide(0);
+  mobileQuery.addEventListener("change", handleViewportChange);
+
+  renderIndicators();
+  goToPage(0);
 })();
