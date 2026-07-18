@@ -10,3 +10,77 @@
   z-index: 1000;       /* sit on top of everything else */
   background: #fff;    /* so content scrolls “underneath” it */
 }
+
+.home-section {
+  margin: 3rem 0;
+}
+
+.home-intro {
+  border-left: 4px solid #1f6f78;
+  max-width: 760px;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+.home-intro h1,
+.home-freshouse h2,
+.product-notes h2 {
+  font-weight: 600;
+}
+
+.home-lede {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.home-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.15rem;
+  border-radius: 4px;
+  background: #1f6f78;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-cta:hover {
+  background: #175861;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-cta:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: 3px;
+}
+
+.home-freshouse {
+  max-width: 800px;
+}
+
+.product-note {
+  margin: 0.75rem 0;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.product-note summary {
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.product-note p,
+.product-note ul {
+  margin: 0;
+  padding: 0 1rem 1rem;
+}
+
+.product-note ul {
+  margin-left: 1.5rem;
+}
+
+.home-cta:visited {
+  color: #fff;
+}
