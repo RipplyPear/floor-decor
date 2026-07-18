@@ -35,9 +35,8 @@ linkedin_username: catalin-mincinoiu-4492a886
 linkedin_show_name: Cătălin Mincinoiu
 
 # Build settings
-theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 
 # Default FRONT MATTER
 defaults:
