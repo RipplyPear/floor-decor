@@ -19,9 +19,7 @@ layout: default
         </li>
         <li>
           <span class="icon">✉️</span>
-          <a href="mailto:vanzari.daminci@gmail.com"
-            >vanzari.daminci@gmail.com</a
-          >
+          <a href="mailto:vanzari.daminci@gmail.com">vanzari.daminci@gmail.com</a>
         </li>
         <li>
           <span class="icon">⏰</span>
@@ -31,17 +29,9 @@ layout: default
     </div>
 
     <div class="container">
-      <form
-        action="https://formsubmit.co/26804c9ee6a4e994726b7daded526e57"
-        method="POST"
-        class="contact-form"
-      >
+      <form action="https://formsubmit.co/26804c9ee6a4e994726b7daded526e57" method="POST" class="contact-form">
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="{{ '/thank-you/' | absolute_url }}"
-        />
+        <input type="hidden" name="_next" value="{{ '/thank-you/' | absolute_url }}" />
 
         <h2>Trimite-ne un mesaj</h2>
 
@@ -51,60 +41,40 @@ layout: default
               <label class="form-label" for="name">
                 Nume <span aria-hidden="true">*</span>
               </label>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                class="form-control"
-                autocomplete="name"
-                required
-              />
+              <input id="name" type="text" name="name" class="form-control" autocomplete="name" required />
             </div>
 
             <div class="col">
               <label class="form-label" for="email">
                 Adresa de email <span aria-hidden="true">*</span>
               </label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                class="form-control"
-                autocomplete="email"
-                inputmode="email"
-                required
-              />
+              <input id="email" type="email" name="email" class="form-control" autocomplete="email" inputmode="email" required />
             </div>
           </div>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="phone">Numărul de telefon</label>
-          <input
-            id="phone"
-            type="tel"
-            name="phone"
-            class="form-control"
-            autocomplete="tel"
-            inputmode="tel"
-          />
+          <input id="phone" type="tel" name="phone" class="form-control" autocomplete="tel" inputmode="tel" />
         </div>
 
         <div class="form-group">
           <label class="form-label" for="message">
             Mesaj <span aria-hidden="true">*</span>
           </label>
-          <textarea
-            id="message"
-            name="message"
-            class="form-control"
-            rows="10"
-            required
-          ></textarea>
+          <textarea id="message" name="message" class="form-control" rows="10" required></textarea>
         </div>
 
         <p class="form-note">
           <span aria-hidden="true">*</span> Câmpuri obligatorii
+        </p>
+
+        <p class="form-privacy">
+          Prin trimiterea formularului, datele sunt prelucrate pentru a răspunde
+          solicitării dvs., conform
+          <a href="{{ '/politica-de-confidentialitate/' | relative_url }}">
+            Politicii de confidențialitate
+          </a>.
         </p>
 
         <button type="submit" class="btn btn-lg btn-dark btn-block">

@@ -1,90 +1,60 @@
 ---
 layout: page
 title: Politică de confidențialitate
-ignore: yes
-category: politici
 permalink: /politica-de-confidentialitate/
-url: /politica-de-confidentialitate/
 ---
 
-### 1\. Introducere
+*Ultima actualizare: 18 iulie 2026*
 
-Această Politică de Confidențialitate explică modul în care Daminci International SRL, CUI RO17135673, J40/943/2005, București, Cooperației 10A, D, S5, 052832, colectează, utilizează și protejează datele personale ale utilizatorilor acestui site. Utilizând site-ul nostru, sunteți de acord cu practicile descrise în această politică.
+## 1. Operatorul de date
 
-### 2\. Colectarea și utilizarea datelor personale
+Operatorul datelor cu caracter personal este **Daminci International SRL**, CUI RO17135673, J40/943/2005, cu sediul în București, Str. Cooperației nr. 10A, sector 5, 052832.
 
-Daminci International SRL colectează și procesează datele personale conform Regulamentului General privind Protecția Datelor (GDPR - Regulamentul (UE) 2016/679). Datele colectate pot include:
+Pentru întrebări legate de prelucrarea datelor personale, ne puteți contacta la [vanzari.daminci@gmail.com](mailto:vanzari.daminci@gmail.com).
 
-- Nume și prenume
+## 2. Ce date colectăm
 
-- Adresă de e-mail
+Prin formularul de contact putem colecta:
 
-- Număr de telefon
+- numele;
+- adresa de e-mail;
+- numărul de telefon, dacă îl furnizați;
+- conținutul mesajului.
 
-- Adresă de facturare și livrare
+Nu solicităm date de plată prin site și nu folosim datele transmise pentru newslettere sau marketing direct.
 
-- Adresa IP și comportamentul pe site
+## 3. De ce și în ce temei prelucrăm datele
 
-Scopurile prelucrării acestor date includ:
+Prelucrăm datele exclusiv pentru a răspunde întrebărilor și cererilor de ofertă.
 
-- Procesarea comenzilor și livrarea produselor
+Temeiul juridic este efectuarea de demersuri la cererea persoanei vizate înainte de încheierea unui contract, atunci când mesajul vizează o ofertă, respectiv interesul nostru legitim de a răspunde solicitărilor primite.
 
-- Comunicarea cu utilizatorii privind comenzile și ofertele promoționale
+## 4. Cum sunt transmise datele
 
-- Îmbunătățirea experienței utilizatorilor pe site
+Formularul de contact este procesat prin serviciul tehnic [FormSubmit](https://formsubmit.co/), care transmite mesajul la adresa noastră de e-mail. FormSubmit declară că păstrează submisiunile timp de 30 de zile.
 
-- Conformarea cu obligațiile legale și fiscale
+Datele pot fi accesate doar de persoanele autorizate din cadrul Daminci International SRL, de furnizorul tehnic FormSubmit și, dacă este necesar, de furnizorul serviciului de e-mail sau de autoritățile competente, în condițiile legii.
 
-### 3\. Drepturile utilizatorilor
+## 5. Cât timp păstrăm datele
 
-Conform GDPR, aveți următoarele drepturi privind datele dumneavoastră personale:
+Mesajele primite prin formular sunt păstrate în inbox cel mult 12 luni de la soluționarea solicitării, cu excepția situațiilor în care păstrarea lor este necesară pentru respectarea unei obligații legale sau pentru apărarea unui drept.
 
-- Dreptul de acces – Puteți solicita informații despre datele pe care le deținem despre dumneavoastră.
+## 6. Drepturile dumneavoastră
 
-- Dreptul la rectificare – Puteți solicita corectarea datelor inexacte.
+În condițiile prevăzute de legislația aplicabilă, puteți solicita:
 
-- Dreptul la ștergere („dreptul de a fi uitat”) – Puteți solicita ștergerea completă a datelor.
+- accesul la datele dumneavoastră;
+- rectificarea sau ștergerea acestora;
+- restricționarea prelucrării;
+- opoziția față de prelucrare;
+- portabilitatea datelor, atunci când este aplicabilă.
 
-- Dreptul la restricționarea prelucrării – Puteți solicita limitarea utilizării datelor.
+Pentru exercitarea acestor drepturi, scrieți-ne la [vanzari.daminci@gmail.com](mailto:vanzari.daminci@gmail.com).
 
-- Dreptul la portabilitate – Puteți solicita transferul datelor către un alt operator.
+## 7. Cookies și analiză
 
-- Dreptul de a obiecta – Puteți refuza utilizarea datelor pentru marketing direct.
+La data ultimei actualizări, site-ul nu utilizează Google Analytics și nu folosește cookie-uri pentru publicitate sau analiză comportamentală. Dacă vom introduce servicii care implică cookie-uri neesențiale, vom actualiza această politică înainte de activarea lor.
 
-- Dreptul de a depune o plângere – Puteți contacta ANSPDCP dacă considerați că drepturile v-au fost încălcate.
+## 8. Modificări
 
-Pentru exercitarea acestor drepturi, ne puteți contacta la vanzari.daminci@gmail.com.
-
-### 4\. Securitatea datelor
-
-Daminci International SRL implementează măsuri tehnice și organizatorice pentru a proteja datele personale împotriva accesului neautorizat, pierderii sau modificării acestora.
-
-### 5\. Cookie-uri și tehnologii similare
-
-Site-ul nostru utilizează cookie-uri pentru a îmbunătăți experiența utilizatorilor și pentru a analiza traficul. Puteți gestiona preferințele privind cookie-urile din setările browserului.
-
-### 6\. Partajarea datelor cu terți
-
-Daminci International SRL nu vinde și nu divulgă datele personale către terți, cu excepția cazurilor necesare pentru:
-
-- Procesarea plăților (prin parteneri de servicii financiare)
-
-- Livrarea produselor (prin firme de curierat)
-
-- Conformarea cu obligațiile legale (autorități publice)
-
-### 7\. Durata păstrării datelor
-
-Datele personale sunt păstrate conform cerințelor legale:
-
-- Datele de comandă și facturare: minim 5 ani
-
-- Datele din solicitările de contact: maxim 2 ani
-
-- Datele de marketing: până la retragerea consimțământului
-
-### 8\. Modificări ale politicii de confidențialitate
-
-Ne rezervăm dreptul de a actualiza această politică de confidențialitate. Orice modificare va fi publicată pe această pagină.
-
-Pentru întrebări, ne puteți contacta la <a href="mailto:vanzari.daminci@gmail.com">vanzari.daminci@gmail.com</a>.
+Putem actualiza această politică atunci când modul de funcționare al site-ului sau legislația aplicabilă se schimbă. Versiunea actualizată va fi publicată pe această pagină.

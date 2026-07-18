@@ -3,71 +3,109 @@
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 2.5rem auto;
   overflow: hidden;
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  z-index: 1;
-  /* track behind */
 }
 
 .carousel-slide {
-  display: flex;
-  flex: 0 0 100%;
-  justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 10px;
+  flex: 0 0 50%;
+  padding: 0 0.5rem;
 }
 
 .carousel-slide img {
-  width: calc(50% - 10px);
-  aspect-ratio: 1/1;
-  object-fit: cover;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 4px;
+  object-fit: cover;
 }
 
 .carousel-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 0 10px;
-  cursor: pointer;
   z-index: 2;
-  /* arrows in front */
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  background: rgb(0 0 0 / 62%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-button:hover {
+  background: rgb(0 0 0 / 80%);
 }
 
 .carousel-button.prev {
-  left: 10px;
+  left: 1rem;
 }
 
 .carousel-button.next {
-  right: 10px;
+  right: 1rem;
 }
 
 .carousel-indicators {
-  text-align: center;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .carousel-indicators .dash {
-  display: inline-block;
-  width: 20px;
+  width: 28px;
   height: 4px;
-  margin: 0 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
   background: #ccc;
-  border-radius: 2px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .carousel-indicators .dash.active {
   background: #333;
+}
+
+.carousel-button:focus-visible,
+.carousel-indicators .dash:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex-basis: 100%;
+    padding: 0;
+  }
+
+  .carousel-button.prev {
+    left: 0.75rem;
+  }
+
+  .carousel-button.next {
+    right: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .carousel-button,
+  .carousel-indicators .dash {
+    transition: none;
+  }
 }
 
 /* ─── FLIP-CARDS ───────────────────────────────────────────────────────── */
@@ -76,7 +114,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 30px 0;
   background: #f5f5f5;
 }
 
@@ -120,23 +158,6 @@
 .card-back {
   background: lightgray;
   transform: rotateY(180deg);
-}
-
-/* ─── RESPONSIVE ───────────────────────────────────────────────────────── */
-/* Carousel: on small screens show only the first image per slide, full-width */
-@media (max-width: 600px) {
-  .carousel-slide {
-    justify-content: center;
-  }
-
-  .carousel-slide img:nth-child(2) {
-    display: none;
-  }
-
-  .carousel-slide img:nth-child(1) {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 /* Flip-cards: wrap two per row on tablets, one per row on phones */

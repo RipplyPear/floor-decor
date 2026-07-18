@@ -77,38 +77,4 @@
   img_url: /assets/freshouse.jpg
   website: /assets/freshouse-catalog.pdf
   category: profile arhitecturale pentru fațadă
-
-# - name: KTL
-#   img_url: /assets/KTL.jpg
-#   website: https://ktlceramica.com/en/
-#   category: gresie - faianţă
-
-# - name: DUNE
-#   img_url: /assets/dune.png
-#   website: https://duneceramics.com/en
-#   category: gresie - faianţă
-
-# - name: PERONDA
-#   img_url: /assets/peronda.png
-#   website: https://peronda.com/
-#   category: gresie - faianţă
-
-# - name: LA-FABRICA
-#   img_url: /assets/la-fabrica.png
-#   website: https://www.lafabbrica.it/en/
-  # category: gresie - faianţă
-
-# - name: MUHR
-#   img_url: /assets/muhr.png
-#   website: https://www.klinkerwerke-muhr.de/en/
-#   category: piatră naturală
-
-# - name: ENGELS
-#   img_url: /assets/engels.png
-#   website: https://www.engelsbrick.com/
-#   category: piatră naturală
-
-# - name: ABCKLINKER
-#   img_url: /assets/abc-klinker.png
-#   website: https://abc-klinker.de/en/
-#   category: piatră naturală
+  download_label: Descarcă catalogul FRESHOUSE (PDF, ~90 MB)

@@ -1,0 +1,29 @@
+{% assign category_order = "profile arhitecturale pentru fațadă|SPC - Parchet|accesorii baie|gresie - faianţă|piatră naturală" | split: "|" %}
+
+{% for category in category_order %}
+  {% assign brands = site.data.brands | where: "category", category %}
+
+  {% if brands.size > 0 %}
+    <section class="gallery-section" aria-labelledby="category-{{ category | slugify }}">
+      <h2 id="category-{{ category | slugify }}" class="gallery-title">
+        <u>{{ category }}</u>
+      </h2>
+
+      <div class="logo-gallery">
+        {% for brand in brands %}
+          {% if brand.download_label %}
+            {% assign link_label = brand.download_label %}
+          {% else %}
+            {% assign link_label = "Vezi produsele " | append: brand.name %}
+          {% endif %}
+
+          <div class="logo-item">
+            <a href="{{ brand.website }}" target="_blank" rel="noopener noreferrer" aria-label="{{ link_label }}" title="{{ link_label }}">
+              <img src="{{ brand.img_url | relative_url }}" alt="{{ brand.name }} logo" loading="lazy" decoding="async">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}

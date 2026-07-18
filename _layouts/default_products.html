@@ -1,58 +1,15 @@
-<!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: en }}">
-  {%- include head.html -%}
+---
+layout: default
+---
 
-  <body>
-    {%- include header.html -%}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title | escape }}</h1>
-          </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
 
-          <div class="post-content">{{ content }}</div>
-        </article>
-
-        {%- comment -%} Inline “brand galleries” instead of pulling in an
-        include {%- endcomment -%} {% assign category_order = "profile
-        arhitecturale pentru fațadă,SPC - Parchet,accesorii baie,gresie -
-        faianţă,piatră naturală" | split: "," %} {% for category in
-        category_order %} {% assign brands = site.data.brands | where:
-        "category", category %} {% if brands.size > 0 %}
-        <section
-          class="gallery-section"
-          aria-labelledby="category-{{ category | slugify }}"
-        >
-          <h2 id="category-{{ category | slugify }}" class="gallery-title">
-            <u>{{ category }}</u>
-          </h2>
-
-          <div class="logo-gallery">
-            {% for brand in brands %}
-            <div class="logo-item">
-              <a
-                href="{{ brand.website }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Vezi produsele {{ brand.name }}"
-              >
-                <img
-                  src="{{ brand.img_url | relative_url }}"
-                  alt="{{ brand.name }} logo"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </section>
-        {% endif %} {% endfor %}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-  </body>
-</html>
+{% include brand-catalog.html %}

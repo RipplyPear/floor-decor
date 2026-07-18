@@ -52,14 +52,13 @@ bundle exec jekyll build
 _data/       # Brand catalogue, navigation and policy data
 _includes/   # Reusable Liquid partials
 _layouts/    # Page layouts
-_sass/       # Theme styling overrides
-assets/      # CSS, JavaScript and static assets
+assets/      # CSS, JavaScript, brand logos and static assets
 pictures/    # Product and showroom imagery
 ```
 
 ## Context
 
-This repository contains the source code for a live client website. Product information and visual assets belong to Floor Decor and are used here with permission.
+This repository contains the source code for the Floor Decor website. Product information and visual assets are used with permission.
 
 ## License
 
