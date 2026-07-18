@@ -823,15 +823,47 @@ table td {
 
 .product-note {
   margin: 0.75rem 0;
+  overflow: hidden;
   border: 1px solid #d8d8d8;
   border-radius: 4px;
   background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-note[open] {
+  border-color: #a8c9cc;
+  box-shadow: 0 3px 10px rgb(31 111 120 / 10%);
 }
 
 .product-note summary {
+  display: flex;
   padding: 0.9rem 1rem;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   font-weight: 600;
+  list-style: none;
+}
+
+.product-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-note summary::after {
+  content: "⌄";
+  color: #1f6f78;
+  font-size: 1.35rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.product-note[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.product-note summary:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: -3px;
 }
 
 .product-note p,
@@ -842,6 +874,31 @@ table td {
 
 .product-note ul {
   margin-left: 1.5rem;
+}
+
+.product-note[open] > :not(summary) {
+  animation: product-note-reveal 0.2s ease-out both;
+}
+
+@keyframes product-note-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-note,
+  .product-note summary::after,
+  .product-note[open] > :not(summary) {
+    animation: none;
+    transition: none;
+  }
 }
 
 .home-cta:visited {
