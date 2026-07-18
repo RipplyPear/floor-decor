@@ -1,32 +1,61 @@
+(() => {
+  const carousel = document.querySelector("[data-carousel]");
 
-    ;(function() {
-      // ─── Carousel JS ───────────────────────────────────────────
-      const track       = document.querySelector('.carousel-track');
-      const slides      = Array.from(track.children);
-      const prevBtn     = document.querySelector('.carousel-button.prev');
-      const nextBtn     = document.querySelector('.carousel-button.next');
-      const dotsContainer = document.querySelector('.carousel-indicators');
-      let   currentIndex = 0;
+  if (!carousel) {
+    return;
+  }
 
-      // build dashes
-      slides.forEach((_, i) => {
-        const dot = document.createElement('span');
-        dot.className = 'dash' + (i === 0 ? ' active' : '');
-        dot.dataset.index = i;
-        dotsContainer.appendChild(dot);
-      });
-      const dots = Array.from(dotsContainer.children);
+  const track = carousel.querySelector("[data-carousel-track]");
+  const slides = Array.from(track?.children ?? []);
+  const previousButton = carousel.querySelector("[data-carousel-previous]");
+  const nextButton = carousel.querySelector("[data-carousel-next]");
+  const indicators = document.querySelector("[data-carousel-indicators]");
 
-      function goToSlide(idx) {
-        if (idx < 0) idx = slides.length - 1;
-        if (idx >= slides.length) idx = 0;
-        track.style.transform = `translateX(-${idx * 100}%)`;
-        dots[currentIndex].classList.remove('active');
-        dots[idx].classList.add('active');
-        currentIndex = idx;
-      }
+  if (!track || !previousButton || !nextButton || !indicators || slides.length === 0) {
+    return;
+  }
 
-      prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
-      nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
-      dots.forEach(d => d.addEventListener('click', e => goToSlide(+e.target.dataset.index)));
-    })();
+  let currentIndex = 0;
+
+  const indicatorButtons = slides.map((_, index) => {
+    const button = document.createElement("button");
+
+    button.className = "dash";
+    button.type = "button";
+    button.setAttribute("aria-label", `Afișează setul de imagini ${index + 1}`);
+
+    button.addEventListener("click", () => goToSlide(index));
+    indicators.appendChild(button);
+
+    return button;
+  });
+
+  function goToSlide(index) {
+    currentIndex = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    indicatorButtons.forEach((button, buttonIndex) => {
+      const isActive = buttonIndex === currentIndex;
+
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-current", String(isActive));
+    });
+  }
+
+  previousButton.addEventListener("click", () => goToSlide(currentIndex - 1));
+  nextButton.addEventListener("click", () => goToSlide(currentIndex + 1));
+
+  carousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      goToSlide(currentIndex - 1);
+    }
+
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      goToSlide(currentIndex + 1);
+    }
+  });
+
+  goToSlide(0);
+})();
