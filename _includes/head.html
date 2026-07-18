@@ -18,7 +18,14 @@
   {% endif %}
   
   {% if page.layout == "home" %}
-    <script src="{{ '/assets/cards-and-carousel.js' | relative_url }}" defer></script>
-  {% endif %}
+  <link
+    rel="stylesheet"
+    href="{{ '/assets/cards-and-carousel.css' | relative_url }}"
+  >
+  <script
+    src="{{ '/assets/cards-and-carousel.js' | relative_url }}"
+    defer
+  ></script>
+{% endif %}
 
 </head>
