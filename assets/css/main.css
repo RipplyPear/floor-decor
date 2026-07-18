@@ -967,3 +967,32 @@ table td {
   outline: 3px solid #1f6f78;
   outline-offset: 3px;
 }
+
+.footer-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.footer-linkedin:visited {
+  color: #0a66c2;
+}
+
+.footer-linkedin:hover {
+  color: #004182;
+  text-decoration: underline;
+}
+
+.footer-linkedin__icon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  fill: currentcolor;
+}
+
+.footer-linkedin:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: 3px;
+}
