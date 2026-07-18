@@ -1,128 +1,164 @@
+/* ─── CAROUSEL ───────────────────────────────────────────────────────── */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+}
 
-    /* ─── CAROUSEL ───────────────────────────────────────────────────────── */
-    .carousel {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: 40px auto;
-      overflow: hidden;
-    }
-    .carousel-track {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      z-index: 1;   /* track behind */
-    }
-    .carousel-slide {
-      display: flex;
-      flex: 0 0 100%;
-      justify-content: space-between;
-      box-sizing: border-box;
-      padding: 0 10px;
-    }
-    .carousel-slide img {
-      width: calc(50% - 10px);
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      border: none;
-      color: #fff;
-      font-size: 2rem;
-      padding: 0 10px;
-      cursor: pointer;
-      z-index: 2;   /* arrows in front */
-    }
-    .carousel-button.prev { left: 10px; }
-    .carousel-button.next { right: 10px; }
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  /* track behind */
+}
 
-    .carousel-indicators {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .carousel-indicators .dash {
-      display: inline-block;
-      width: 20px;
-      height: 4px;
-      margin: 0 4px;
-      background: #ccc;
-      border-radius: 2px;
-      cursor: pointer;
-    }
-    .carousel-indicators .dash.active {
-      background: #333;
-    }
+.carousel-slide {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
 
-    /* ─── FLIP-CARDS ───────────────────────────────────────────────────────── */
-    .card-row {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 40px 0;
-      background: #f5f5f5;
-    }
-    .card {
-      width: 220px;
-      height: 60px;
-      perspective: 800px;
-    }
-    .card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
-    }
-    .card:hover .card-inner {
-      transform: rotateY(180deg);
-    }
-    .card-face {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: sans-serif;
-      font-size: 1rem;
-      color: #000000;
-      text-align: center;
-    }
-    .card-front { background: #ffffff; }
-    .card-back {
-      background: lightgray;
-      transform: rotateY(180deg);
-    }
+.carousel-slide img {
+  width: calc(50% - 10px);
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
-    /* ─── RESPONSIVE ───────────────────────────────────────────────────────── */
-    /* Carousel: on small screens show only the first image per slide, full-width */
-    @media (max-width: 600px) {
-      .carousel-slide {
-        justify-content: center;
-      }
-      .carousel-slide img:nth-child(2) {
-        display: none;
-      }
-      .carousel-slide img:nth-child(1) {
-        width: 100%;
-        margin: 0;
-      }
-    }
-    /* Flip-cards: wrap two per row on tablets, one per row on phones */
-    @media (max-width: 768px) {
-      .card {
-        width: calc(50% - 10px);
-      }
-    }
-    @media (max-width: 480px) {
-      .card {
-        width: 100%;
-      }
-    }
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 2;
+  /* arrows in front */
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators .dash {
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  margin: 0 4px;
+  background: #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.carousel-indicators .dash.active {
+  background: #333;
+}
+
+/* ─── FLIP-CARDS ───────────────────────────────────────────────────────── */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background: #f5f5f5;
+}
+
+.card {
+  width: 220px;
+  height: 60px;
+  perspective: 800px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  text-align: center;
+}
+
+.card-front {
+  background: #ffffff;
+}
+
+.card-back {
+  background: lightgray;
+  transform: rotateY(180deg);
+}
+
+/* ─── RESPONSIVE ───────────────────────────────────────────────────────── */
+/* Carousel: on small screens show only the first image per slide, full-width */
+@media (max-width: 600px) {
+  .carousel-slide {
+    justify-content: center;
+  }
+
+  .carousel-slide img:nth-child(2) {
+    display: none;
+  }
+
+  .carousel-slide img:nth-child(1) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Flip-cards: wrap two per row on tablets, one per row on phones */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.carousel-indicators .dash {
+  border: 0;
+  padding: 0;
+}
+
+.carousel-button:focus-visible,
+.carousel-indicators .dash:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: 3px;
+}
