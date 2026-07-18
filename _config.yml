@@ -28,6 +28,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   consultanță dedicată pentru a transforma orice spațiu într-o locuință de vis.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://floordecor.ro" # the base hostname & protocol for your site, e.g. http://example.com
+lang: ro
+locale: ro_RO
+logo: /assets/hero-interior-logo.avif
 linkedin_username: catalin-mincinoiu-4492a886
 linkedin_show_name: Cătălin Mincinoiu
 
@@ -35,18 +38,6 @@ linkedin_show_name: Cătălin Mincinoiu
 theme: minima
 plugins:
   - jekyll-feed
-
-nav:
-  - title: Politică de confidențialitate
-    url: /_misc/politica-de-confidentialitate/
-  - title: Termeni și condiții
-    url: /_misc/termeni-si-conditii/
-
-header_pages:
-  - index.markdown
-  - produse.md
-  - about.markdown
-  - contact.md
 
 # Default FRONT MATTER
 defaults:

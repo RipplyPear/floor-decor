@@ -1,79 +1,33 @@
-    <!-- ─── FLIP-CARDS MARKUP ─────────────────────────────────────────────
-  <div class="card-row">
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-face card-front"><strong>Peste 20 de ani<br>de experiență</strong></div>
-        <div class="card-face card-back"><strong>Excelență în design<br>interior și exterior</strong></div>
-      </div>
+<div 
+  class="carousel" 
+  data-carousel 
+  aria-label="Galerie de proiecte Freshouse" 
+  aria-roledescription="carousel"
+  tabindex="0"
+>
+
+  <button class="carousel-button prev" data-carousel-previous type="button" aria-label="Imaginile anterioare">
+    &#10094;
+  </button>
+
+  <div class="carousel-track" data-carousel-track>
+    <div class="carousel-slide">
+      <img src="{{ '/pictures/freshouse1.jpg' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 1" />
+      <img src="{{ '/pictures/freshouse2.png' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 2" />
     </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-face card-front"><strong>Branduri de top</strong></div>
-        <div class="card-face card-back"><strong>Colaborăm doar cu<br>branduri de top</strong></div>
-      </div>
+    <div class="carousel-slide">
+      <img src="{{ '/pictures/freshouse3.jpg' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 3" />
+      <img src="{{ '/pictures/freshouse4.png' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 4" />
     </div>
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-face card-front"><strong>Strânsă colaborare</strong></div>
-        <div class="card-face card-back"><strong>Fiecare colaborare<br>atent analizată</strong></div>
-      </div>
+    <div class="carousel-slide">
+      <img src="{{ '/pictures/freshouse5.jpg' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 5" />
+      <img src="{{ '/pictures/freshouse6.jpg' | relative_url }}" alt="Profil decorativ Freshouse — fotografie 6" />
     </div>
-  </div> -->
-  
-  <!-- ─── CAROUSEL MARKUP ────────────────────────────────────────────── -->
-  <div class="carousel">
-    <button class="carousel-button prev">&#10094;</button>
-    <div class="carousel-track">
-      <div class="carousel-slide">
-        <img src="{{ '/pictures/freshouse1.jpg' | relative_url }}" alt="">
-        <img src="{{ '/pictures/freshouse2.png' | relative_url }}" alt="">
-      </div>
-      <div class="carousel-slide">
-        <img src="{{ '/pictures/freshouse3.jpg' | relative_url }}" alt="">
-        <img src="{{ '/pictures/freshouse4.png' | relative_url }}" alt="">
-      </div>
-      <!-- Add more slides here -->
-       <div class="carousel-slide">
-        <img src="{{ '/pictures/freshouse5.jpg' | relative_url }}" alt="">
-        <img src="{{ '/pictures/freshouse6.jpg' | relative_url }}" alt="">
-      </div>
-    </div>
-    <button class="carousel-button next">&#10095;</button>
   </div>
-  <div class="carousel-indicators"></div>
 
-    <script>
-  
-    ;(function() {
-      // ─── Carousel JS ───────────────────────────────────────────
-      const track       = document.querySelector('.carousel-track');
-      const slides      = Array.from(track.children);
-      const prevBtn     = document.querySelector('.carousel-button.prev');
-      const nextBtn     = document.querySelector('.carousel-button.next');
-      const dotsContainer = document.querySelector('.carousel-indicators');
-      let   currentIndex = 0;
+  <button class="carousel-button next" data-carousel-next type="button" aria-label="Imaginile următoare">
+    &#10095;
+  </button>
 
-      // build dashes
-      slides.forEach((_, i) => {
-        const dot = document.createElement('span');
-        dot.className = 'dash' + (i === 0 ? ' active' : '');
-        dot.dataset.index = i;
-        dotsContainer.appendChild(dot);
-      });
-      const dots = Array.from(dotsContainer.children);
-
-      function goToSlide(idx) {
-        if (idx < 0) idx = slides.length - 1;
-        if (idx >= slides.length) idx = 0;
-        track.style.transform = `translateX(-${idx * 100}%)`;
-        dots[currentIndex].classList.remove('active');
-        dots[idx].classList.add('active');
-        currentIndex = idx;
-      }
-
-      prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
-      nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
-      dots.forEach(d => d.addEventListener('click', e => goToSlide(+e.target.dataset.index)));
-    })();
-
-  </script>
+</div>
+<div class="carousel-indicators" data-carousel-indicators aria-label="Selectează un set de imagini"></div>
