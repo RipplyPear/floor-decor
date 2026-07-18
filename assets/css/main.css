@@ -996,3 +996,22 @@ table td {
   outline: 3px solid #1f6f78;
   outline-offset: 3px;
 }
+
+@media screen and (min-width: 601px) {
+  .site-header .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-title {
+    float: none;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    float: none;
+    line-height: normal;
+  }
+}
