@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.html": "liquid"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "prettier.requireConfig": true
+}
