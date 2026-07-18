@@ -1,10 +1,9 @@
 # Floor Decor
 
+[![Build site](https://github.com/RipplyPear/floor-decor/actions/workflows/ci.yml/badge.svg?branch=gh-pages)](https://github.com/RipplyPear/floor-decor/actions/workflows/ci.yml)
 [![Live website](https://img.shields.io/badge/Live%20website-floordecor.ro-1f6f78?style=flat-square)](https://floordecor.ro)
 
-A responsive static website for Floor Decor, a Romanian showroom specializing in interior and exterior finishing solutions.
-
-Built as a real-world client project, the website presents the company, its product categories and partner brands, while providing a direct contact channel for prospective customers.
+A responsive static website for Floor Decor, a Romanian showroom specializing in interior and exterior finishing solutions, built with Jekyll.
 
 ## Highlights
 
