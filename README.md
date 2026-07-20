@@ -19,7 +19,7 @@ A responsive static website for Floor Decor, a Romanian showroom specializing in
 - Jekyll 4
 - Liquid
 - HTML5
-- SCSS
+- CSS
 - Vanilla JavaScript
 - GitHub Pages
 
